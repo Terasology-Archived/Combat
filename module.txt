@@ -1,0 +1,9 @@
+{
+    "id" : "Combat",
+    "version" : "0.1.0",
+    "author" : "aherber, nh_99",
+    "displayName" : "Combat System",
+    "description" : "A physics-based combat system",
+    "dependencies" : [],
+    "isServerSideOnly" : false
+}
