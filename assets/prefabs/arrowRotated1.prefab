@@ -1,0 +1,41 @@
+{
+  "name": "combat:arrowRotated1",
+   "Mesh" : {
+    "mesh" : "combat:arrow",
+    "material" : "combat:arrow1"
+   }, 
+   "Location" : {
+   },
+   "RigidBody" : {
+   		"collisionGroup" : "engine:default",
+   		"collidesWith" : ["engine:default","engine:world"],
+        "mass" : 0.025,
+        "kinematic" : false	
+    },
+   "BoxShape" : {
+       "extents" : [0.125,0.125,0.6]
+   }, 
+   "Item" : {
+        "name" : "Arrow",
+        "icon" : "Test",
+        "renderWithIcon" : false,
+        "baseDamage" : 0
+   },
+    "Lifespan" : {
+        "lifespan" : 10
+   },
+    "Projectile" : { 
+    	"piercing" : false,
+    	"bounce" : false,
+    	"riccochet" : true,
+    	"effectedByGravity" : false,
+    	"velocityBasedRotation" : true
+   }, 
+   "HitDetection" : {
+   		"trigger" : "ONCE"
+   },
+   "Trigger" : {
+    	"detectGroups" : ["engine:character","engine:world"]
+   }
+   
+}

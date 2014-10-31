@@ -1,0 +1,43 @@
+{
+  "name": "combat:arrowKinemtaicRotate",
+   "Mesh" : {
+    "mesh" : "combat:arrow",
+    "material" : "combat:arrow1"
+   }, 
+   "Location" : {
+   },
+   "RigidBody" : {
+   		"collisionGroup" : "engine:default",
+   		"collidesWith" : ["engine:default","engine:world"],
+        "mass" : 0.025,
+        "kinematic" : true,
+        "angularFactor" : 0.5
+    },
+   "BoxShape" : {
+       "extents" : [0.125,0.125,0.725]
+   }, 
+   "Item" : {
+        "name" : "Arrow",
+        "icon" : "Test",
+        "renderWithIcon" : false,
+        "baseDamage" : 20
+   },
+    "Lifespan" : {
+        "lifespan" : 10
+   },
+    "Projectile" : { 
+    	"effectedByGravity" : true,
+    	"velocityBasedRotation" : true
+   }, 
+   "HitDetection" : {
+   		"trigger" : "ONCE_PER_ENTITY"
+   },
+   "Trigger" : {
+    	"detectGroups" : ["engine:character","engine:world"]
+   },
+   "PlaySoundAction" : {
+        "sounds" : ["engine:Slime1", "engine:Slime2", "engine:Slime3", "engine:Slime4", "engine:Slime5"]
+   }
+   
+   
+}

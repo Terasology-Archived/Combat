@@ -1,0 +1,39 @@
+{
+  "name": "combat:arrowKinematicPierce",
+   "Mesh" : {
+    "mesh" : "combat:arrow",
+    "material" : "combat:arrow1"
+   }, 
+   "Location" : {
+   },
+   "RigidBody" : {
+   		"collisionGroup" : "engine:default",
+   		"collidesWith" : ["engine:default"],
+        "mass" : 0.025,
+        "kinematic" : true	
+    },
+   "BoxShape" : {
+       "extents" : [0.125,0.125,0.725]
+   }, 
+   "Item" : {
+        "name" : "Arrow",
+        "icon" : "Test",
+        "renderWithIcon" : false,
+        "baseDamage" : 20
+   },
+    "Lifespan" : {
+        "lifespan" : 10
+   },
+    "Projectile" : { 
+    	"piercing" : true,
+    	"effectedByGravity" : true,
+    	"velocityBasedRotation" : true
+   }, 
+   "HitDetection" : {
+   		"trigger" : "ONCE"
+   },
+   "Trigger" : {
+    	"detectGroups" : ["engine:character","engine:world"]
+   }
+   
+}

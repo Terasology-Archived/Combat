@@ -1,0 +1,10 @@
+{
+  "name": "combat:arrow",
+   "Item" : {
+        "name" : "Arrow",
+        "icon" : "Arrow",
+        "renderWithIcon" : false,
+        "baseDamage" : 0,
+        "stackCount" : 99
+   }
+}

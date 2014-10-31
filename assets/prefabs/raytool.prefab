@@ -1,0 +1,13 @@
+{
+    "name" : "combat:raytool",
+    "Item" : {
+        "name" : "Sword",
+        "icon" : "Sword",
+        "usage" : "IN_DIRECTION",
+        "renderWithIcon" : true,
+        "baseDamage" : 10,
+        "range" : 3
+    },
+    "RayTraceAction" : { 
+     }
+}

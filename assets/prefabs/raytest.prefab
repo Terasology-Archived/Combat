@@ -1,0 +1,15 @@
+{
+  "name": "combat:raytest",
+   "Mesh" : {
+    "mesh" : "engine:exportX",
+    "material" : "combat:arrowRotated1"
+   }, 
+   "Location" : {
+   },
+  
+   "Lifespan" : {
+        "lifespan" : 60
+   }
+  
+   
+}

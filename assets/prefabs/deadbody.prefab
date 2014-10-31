@@ -1,0 +1,25 @@
+{
+    "name" : "combat:deadbody",
+    "BoxShape" : {
+        "extents" : [0.75, 0.75, 0.75]
+    },
+    "Location" : {},
+    "RigidBody" : {
+        "angularFactor" : 1.0,
+        "mass" : 4,
+        "restitution" : 0.1,
+        "friction" : 1,
+        "velocity" : 0.00125f;
+        "collisionGroup" : "engine:world",
+        "collidesWith" : 
+            ["engine:world","engine:debris","engine:sensor","engine:character","engine:static"],
+        "kinematic" : false
+    },
+    "Lifespan" : {
+        "lifespan" : 30
+    },
+    "InteractionTarget": {},
+    "InteractionScreen": {
+        "screen": "engine:containerScreen"
+    }
+}

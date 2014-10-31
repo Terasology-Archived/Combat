@@ -1,0 +1,18 @@
+{
+    "name" : "combat:bowKinematicRiccochet",
+    "Item" : {
+        "name" : "BowKinematicRiccochet",
+        "icon" : "Bow",
+        "usage" : "IN_DIRECTION",
+        "renderWithIcon" : true,
+        "baseDamage" : 10,
+        "chargeable" : true,
+        "maxChargeTime" : 1.0,
+        "minChargeTime" : 0.5
+    },
+    "LaunchEntity" : {
+    	"entity" : "combat:arrowRiccochet", 
+    	"spawnDistance" : 1.0f,
+    	"distancePerSecond" : 45
+    }  
+}
